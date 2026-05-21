@@ -44,6 +44,8 @@
         src="https://img.shields.io/github/languages/code-size/ayamir/nvimdots?colorA=363A4F&colorB=DDB6F2&logo=gitlfs&logoColor=D9E0EE&style=for-the-badge">
 </p>
 
+This repository is derived from ayamir/nvimdots and includes my own modifications.
+
 ## 🪷 Introduction
 
 This repo hosts our [Neovim](https://neovim.io/) configuration for Linux [(with NixOS support)](#nixos-support), macOS, and Windows. `init.lua` is the config entry point.
