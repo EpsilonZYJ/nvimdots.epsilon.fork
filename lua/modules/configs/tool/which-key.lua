@@ -72,6 +72,7 @@ return function()
 			{ "<leader>f", group = icons.ui.Telescope .. " Fuzzy Find" },
 			{ "<leader>n", group = icons.ui.FolderOpen .. " Nvim Tree" },
 			{ "<leader>c", group = icons.aichat.Chat .. " Chat" },
+            { "<leader>C", group = icons.aichat.Chat .. " Claude Code" },
 		},
 	})
 end
