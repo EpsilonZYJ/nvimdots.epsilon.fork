@@ -118,11 +118,14 @@ settings["lsp_deps"] = {
 	"bashls",
 	"clangd",
 	"gopls",
+	"cssls",
+	"eslint",
 	"html",
 	"jdtls",
 	"jsonls",
 	"lua_ls",
 	"ruff",
+	"ts_ls",
 	"zuban",
 }
 
