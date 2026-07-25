@@ -106,12 +106,12 @@ settings["edit_prediction_source"] = "oai-compatible"
 -- Default adapter for OpenAI-compatible edit prediction. Must be a key in `ai_adapters`.
 -- The hyphenated key `pred-adapter` is also accepted in user settings.
 ---@type string
-settings["pred_adapter"] = "opencode"
+settings["pred_adapter"] = "ppio"
 
 -- Model used by OpenAI-compatible Minuet completion prediction.
 -- The hyphenated key `pred-model` is also accepted in user settings.
 ---@type string
-settings["pred_model"] = "deepseek-v4-flash"
+settings["pred_model"] = "deepseek/deepseek-v4-pro"
 
 -- Extra OpenAI-compatible request parameters for Minuet completion prediction.
 -- The hyphenated key `pred-optional-params` is also accepted in user settings.
