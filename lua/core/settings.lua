@@ -74,12 +74,28 @@ settings["ai_adapters"] = {
 			-- reasoning_effort = "none",
 		},
 	},
+	ppio = {
+		type = "openai-compatible",
+		name = "PPIO",
+		base_url = "https://api.ppinfra.com/v3/openai",
+		chat_url = "/chat/completions",
+		api_key = "PPIO_API_KEY",
+		models = {
+			"moonshotai/kimi-k3",
+			"deepseek/deepseek-v4-pro",
+		},
+		default_model = "deepseek/deepseek-v4-pro",
+		optional = {
+			-- Disable thinking/reasoning for OpenRouter models if needed:
+			-- reasoning = { effort = "none" },
+		},
+	},
 }
 
 -- Default CodeCompanion adapter. Must be a key in `ai_adapters`.
 -- The hyphenated key `codecompanion-adapter` is also accepted in user settings.
 ---@type string
-settings["codecompanion_adapter"] = "openrouter"
+settings["codecompanion_adapter"] = "ppio"
 
 -- Completion prediction backend.
 -- Valid values: `copilot`, `oai-compatible`.
