@@ -83,8 +83,9 @@ settings["ai_adapters"] = {
 		models = {
 			"moonshotai/kimi-k3",
 			"deepseek/deepseek-v4-pro",
+			"deepseek/deepseek-v4-flash",
 		},
-		default_model = "deepseek/deepseek-v4-pro",
+		default_model = "deepseek/deepseek-v4-flash",
 		optional = {
 			-- Disable thinking/reasoning for OpenRouter models if needed:
 			-- reasoning = { effort = "none" },
@@ -111,7 +112,7 @@ settings["pred_adapter"] = "ppio"
 -- Model used by OpenAI-compatible Minuet completion prediction.
 -- The hyphenated key `pred-model` is also accepted in user settings.
 ---@type string
-settings["pred_model"] = "deepseek/deepseek-v4-pro"
+settings["pred_model"] = "deepseek/deepseek-v4-flash"
 
 -- Extra OpenAI-compatible request parameters for Minuet completion prediction.
 -- The hyphenated key `pred-optional-params` is also accepted in user settings.
@@ -127,7 +128,7 @@ settings["pred_model"] = "deepseek/deepseek-v4-pro"
 settings["pred_optional_params"] = {
 	top_p = 0.9,
 	max_tokens = 128,
-	{ thinking = { type = "disabled" } },
+	thinking = { type = "disabled" },
 }
 
 -- Set to false if you don't want to format on save.
