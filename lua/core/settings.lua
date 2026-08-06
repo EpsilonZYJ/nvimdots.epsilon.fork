@@ -240,6 +240,7 @@ settings["lsp_inlayhints"] = false
 settings["lsp_deps"] = {
 	"bashls",
 	"clangd",
+	"neocmakelsp",
 	"gopls",
 	"cssls",
 	"eslint",
