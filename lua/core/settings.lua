@@ -281,6 +281,7 @@ settings["dap_deps"] = {
 settings["treesitter_deps"] = {
 	"bash",
 	"c",
+	"cmake",
 	"cpp",
 	"css",
 	"go",
